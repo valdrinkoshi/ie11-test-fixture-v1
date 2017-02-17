@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>activeElement</title>
+
+  <script>
+    window.addEventListener('WebComponentsReady', function() {
+      var input = document.querySelector('input');
+      console.log('input not focused?', document.activeElement !== input);
+      input.focus();
+      console.log('input focused?', document.activeElement === input);
+      input.parentNode.removeChild(input);
+      // In IE11, document.activeElement fails with error:
+      // Object doesn't support property or method 'getRootNode'
+      console.log('activeElement updated?', document.activeElement === input);
+    });
+  </script>
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+</head>
+
+<body>
+  <input type="text">
+</body>
+
+</html>

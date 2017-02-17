@@ -1,0 +1,14 @@
+{
+  "name": "ie11-test-fixture-v1",
+  "homepage": "https://github.com/valdrinkoshi/ie11-test-fixture-v1",
+  "authors": [
+    "valdrinkoshi <valdrin@google.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#v1"
+  }
+}
